@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>New Entry</title>
+{% endblock %}
+
+
+{% block body %}
+
+<hr>
+<form action="/guestbook", method="POST">
+    <label for="author">Author:</label>
+    <input class="form-control" type="text" name="author" id="author" placeholder="Enter Author" aria-label="Enter Author">
+    <br>
+    <label for="content">Comments:</label>
+    <textarea class="form-control" name="content" id="content" placeholder="Enter Content" rows="3"></textarea>
+    <br>
+    <input type="submit", value="Post">
+</form>
+<hr>
+{% endblock %}

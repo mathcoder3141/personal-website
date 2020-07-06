@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title xmlns="http://www.w3.org/1999/html">About Me</title>
+{% endblock %}
+
+
+{% block body %}
+<p>
+My name is Randall Hall, and I graduated from the University of North Texas with a  Bachelors of Science in Mathematics.
+After graduating with a mathematics degree, I’ve taken the opportunity to teach myself Python, R, and SQL to help me
+turn my passion into a career in data analytics.
+</p>
+
+<p>
+I have a curious mind and a mind of a philosopher. "Why?" seems to be my favorite question. That three letter word has
+led me to answer so many questions with data, and improve data quality for organizations. My strong work ethic,
+data-driven mindset, and technical finesse would be an asset to any organization who wishes to use data and unlock
+the true power of their organization.
+</p>
+
+<p>
+When I am not busy working or improving my programming skills, I enjoy listening to various types of music, assisting
+those who need help with mathematics, and playing Pokémon GO.
+</p>
+
+<hr>
+<center><h3>Components of my personality</h3></center
+<br>
+<table>
+    <tr>
+        <td><center><img src="{{ url_for('static', filename="assets/transparency.jpg")}}"></center></td>
+        <td><center><img src="{{ url_for('static', filename="assets/driven.jpg")}}"></center></td>
+        <td><center><img src="{{ url_for('static', filename="assets/adaptable.jpg")}}"></center></td>
+    </tr>
+    <tr>
+        <td style="text-align:center">Transparent</td>
+        <td style="text-align:center">Self-Driven</td>
+        <td style="text-align:center">Adaptable</td>
+    </tr>
+    <tr>
+        <td style="text-align:center">
+            Being transparent with myself and being transparent with other people creates an environment that is both
+            open and honest. With everything I do, I try my best to communicate what I am doing and why it's relevant.
+        </td>
+        <td style="text-align:center">
+            My self-driven attitude is what drives me to get up every day. I do not just sit around and wait for
+            something to happen; I get up and make myself achieve whatever goals I set for myself. The phrase "I will
+            wait until I get told to do it" does not exist in my vocabulary.
+        </td>
+        <td style="text-align:center">
+            Life is full of curve balls, and plans change all the time. I am highly flexible and mentally prepare for
+            every possible change that could occur at any time. In addition to flexibility, I embrace the sudden change
+            and look forward to work in the new direction.</td>
+    </tr>
+</table>
+{% endblock %}

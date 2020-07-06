@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title xmlns="http://www.w3.org/1999/html">Contact Me</title>
+{% endblock %}
+
+{% block body %}
+<form action="mailto:randallhall@icloud.com" method="POST">
+    <label for="fn">First Name:</label>
+    <input class="form-control" type="text" name="fn" id="fn" placeholder="Enter First Name">
+    <label for="ln">Last Name:</label>
+    <input class="form-control" type="text" name="ln" id="ln" placeholder="Enter First Name">
+    <label for="mail">Email:</label>
+    <input class="form-control" type="text" name="mail" id="mail" placeholder="Enter First Name">
+    <label for="subject">Subject:</label>
+    <input class="form-control" type="text" name="subject" id="subject" placeholder="Enter First Name">
+    <br>
+    <label for="content">Message:</label>
+    <textarea class="form-control" name="content" id="content" placeholder="Enter Content" rows="3"></textarea>
+    <br>
+    <input type="submit", value="Submit">
+</form>
+{% endblock %}

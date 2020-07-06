@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">Home</title>
+
+{% endblock %}
+
+{% block body %}
+<br>
+<br>
+<div class="jumbotron">
+    <div class="col-sm-8 mx-auto">
+        <center><h1>Welcome to my website. Glad to have you here today!</h1></center>
+        <img class = "img-circle" width="200" src="{{ url_for('static', filename="assets/self.jpg") }}">
+    </div>
+    <center>
+        <p>I am Randall Hall. I turn data into meaningful information, love learning new things, and ask
+            "why" quite a lot. </p></center>
+
+    </div>
+    {% endblock %}
