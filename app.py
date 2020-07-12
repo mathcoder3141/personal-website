@@ -34,6 +34,7 @@ def contact():
 @app.route('/accomplishments')
 def accomplishments():
     return render_template('/accomplishments.html')
+    
 @app.route('/guestbook', methods=['GET', 'POST'])
 def entries():
     if request.method == 'POST':
@@ -44,7 +45,7 @@ def entries():
         db.session.commit()
         return redirect('/guestbook')
     else:
-        all_entries = GuestBook.query.order_by(GuestBook.created).all()
+        all_entries = GuestBook.query.order_by(GuestBook.created.desc()).all()
         return render_template('entries.html', posts=all_entries)
 
 @app.route('/guestbook/new', methods=['GET', 'POST'])
