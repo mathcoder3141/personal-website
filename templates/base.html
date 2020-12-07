@@ -15,6 +15,11 @@ body {
 
 .img-circle {
     border-radius: 50%;
+    box-shadow: 2px 2px;
+    border: 2px solid #000000;
+    float:left;
+    margin-top:-110px;
+    margin-right:50px;
 }
 
 .sidenav {
@@ -37,6 +42,12 @@ body {
   color: #818181;
   display: block;
   transition: 0.3s;
+ }
+
+.jumbotron {
+  background-color:#56a832 !important;
+  height: auto;
+  width: auto;
 }
 
 .sidenav a:hover {
@@ -56,15 +67,19 @@ body {
   padding: 16px;
 }
 
+.display-3 {
+ float: center;
+ margin-left: 240px;
+}
+
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-
     </style>
     {% block head %} {% endblock %}
 </head>
-<body>
+<body background="https://img.freepik.com/free-vector/blue-white-crystal-textured-background_53876-85226.jpg?size=626&ext=jpg">
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="/">Home</a>
